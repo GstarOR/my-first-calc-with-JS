@@ -31,7 +31,16 @@ body{
 .inputBox{
     display: flex;
     flex-direction: column;
+    position: relative;
 
+
+}
+.inputBox span{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 .inp{
     padding: 10px;

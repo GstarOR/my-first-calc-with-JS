@@ -3,6 +3,7 @@
   <head>
     <title>Password Generator</title>
     <link rel="stylesheet" href="gen.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
   </head>
@@ -12,27 +13,30 @@
 
       <div class="inputBox" >
         <input type="text" class="inp" id="passBox" />
-        <input type="range" min="1" max="25" value="9" id="inputslider"/>
+        <span class="material-symbols-outlined" id="copytext">
+          content_copy
+        </span>
       </div>
+      <input type="range" min="1" max="25" value="9" id="inputslider"/>
       <div class="divLetters">
         <p>Password Length</p>
         <span id="slidervalue"></span>
       </div>
       <div class="divLetters">
         <label for="lowercase">Include Lowercase Letters(a-z)</label>
-        <input type="checkbox" class="lowC" id="lowercase" />
+        <input type="checkbox" class="lowC" id="lowercase" checked />
       </div>
       <div class="divLetters">
         <label for="">Include Uppercase Letters(A-Z)</label>
-        <input type="checkbox" class="lowC" id="uppercase"/>
+        <input type="checkbox" class="lowC" id="uppercase" checked/>
       </div>
       <div class="divLetters">
         <label for="">Include Numbers (0-9)</label>
-        <input type="checkbox" class="lowC" id="numbers"/>
+        <input type="checkbox" class="lowC" id="numbers" checked/>
       </div>
       <div class="divLetters">
         <label for="symbols">Include Symbols(@*$)</label>
-        <input type="checkbox" class="lowC" id="symbols"/>
+        <input type="checkbox" class="lowC" id="symbols" checked/>
       </div>
       <button class="btn" id="genBtn">Generate Password</button>
     </div>

@@ -1,0 +1,160 @@
+body {
+    color: black;
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.mainDiv{
+    background-color: rgb(19, 17, 17);
+    width: 60vw;
+    height: 60vh;
+    padding: 0; 
+    border-radius: 1pc;
+
+}
+.internalDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: none;
+    gap: 20px;
+}
+.internalDiv1{
+    background-color: aliceblue;
+    width: 100%;
+    height: 60px;
+    border: 2px solid white ;
+    align-content: center;
+    justify-items: center;
+
+}
+.internaldiv1__open{
+    background-color: rgb(102, 173, 102);
+    width: 80%;
+    height: 35px;
+
+}
+.open__it{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+
+}
+.internalDiv2{
+    background-color: aliceblue;
+    width: 100%;
+    height: 30px;
+    align-content: center;
+
+}
+table{
+    background-color: black;
+}
+th{
+    border: 1px solid black;
+    padding: 10px 8px;
+    background-color: rgb(197, 183, 183);
+    border-collapse: separate;
+}
+.internalDiv3{
+    background-color: antiquewhite;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex: row;
+    gap: 10px;
+}
+.internalDiv3__A{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.A1{
+ display: flex;
+ flex-direction: column;
+}
+.A__wh{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+    
+}
+.A2{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.A__yel{
+    padding: 12px 15px;
+    background-color: orange;
+    margin-bottom: 5px;
+}
+.internalDiv3__B{
+    display: flex;
+    flex-direction: column;
+     margin-top: 5px;
+     gap: 8px;
+    
+}
+.B__ST{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+   
+}
+.ST__wh{
+    
+    padding: 11px 13.5px ;
+    background-color: rgb(247, 247, 247);
+    border-color: white;
+}
+.B__ED{
+   display: flex;
+   flex-direction: column;
+
+}
+.ED1{
+    display: flex; 
+    flex-direction: row;
+}
+.ED__bl{
+    padding: 7px 10px;
+    margin-bottom: 6px;
+    background-color: rgb(148, 133, 133);
+}
+.ED__wh{
+    padding: 8px 8px;
+    margin-left: 4px;
+}
+.ED2{
+    display: flex; 
+    flex-direction: row;
+    gap: 5px;
+}
+.ED2__B{
+margin-left: 4px;
+margin-top: 4px;
+}
+.ED2__bl{
+    padding: 13px 15px;
+    margin-bottom: 6px;
+    background-color: rgb(148, 133, 133);
+}   
+
+.ED2__wh{
+    padding: 28px 13px;
+
+}
+.iP{
+    width: 100%;
+    height: 100%;
+    background: none;
+    
+
+}

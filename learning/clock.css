@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(202, 14, 14), rgb(31, 112, 56));
+}
+.clock{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    background: url(https://i.postimg.cc/3x3QzSGq/clock-bg.png);
+    background-size: cover;
+    box-shadow: 0 0 0 8px rgba(255,255,255,0.1),
+                0 0 0 15px rgba(255,255,255,0.1),
+                0 0 20px rgba(0,0,0,0.1);
+}
+button{
+    position: absolute;
+    background: transparent;
+    color: white;
+    border: none;
+    //box-shadow: 4px 6px 4px rgb(196, 241, 12), 4px 6px 4px rgba(196, 241, 12, 0.2);
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 4%;
+    cursor: pointer;
+    
+}
+.start{
+    top: 2%;
+    right: 44%;
+    cursor: pointer;
+    
+
+}
+.bellow{
+    right: 42%;
+    bottom: 2%;
+}
+.ninth__button{
+    left: 2%;
+    top: 44%;
+}   
+.third__button{
+    right: 2%;
+    top: 44%;
+}
+.tenth__button{
+    left: 3%;
+    bottom: 58%;
+}
+.fourth__button{
+    left: 64%;
+    bottom: 8%;
+}
+.second__button{
+    right: 8%;
+    bottom: 59%;
+}
+.eight__button{
+    left: 10%;
+    top: 64%;
+}
+.fifth__button{
+    right: 10%;
+    top: 64%;
+}
+.seventh__button{
+    left: 25%;
+    bottom: 8%;
+}
+.eleventh__button{
+    left: 15%;
+    top: 10%;
+}
+.first__button{
+    right: 25%;
+    top: 10%;
+}
+

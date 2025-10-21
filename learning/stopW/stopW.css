@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.timer{
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+
+}
+.timer__display{
+    font-size: 50px;
+    font-weight: 600;
+}
+.button{
+    margin-top: 10px;
+}
+button{
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--clr);
+    color: white;
+    cursor: pointer;
+    margin-inline: 6px;
+    cursor: pointer;
+}

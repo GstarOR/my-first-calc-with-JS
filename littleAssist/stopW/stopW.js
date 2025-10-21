@@ -1,56 +1,66 @@
-let min = document.getElementById('min');
-let sec = document.getElementById('sec');
-let msec = document.getElementById('msec');
-const startCount = document.getElementById('start');
-const stopCount = document.getElementById('stop');
-const clearCount = document.getElementById('clear');
+let msec = document.getElementById("msec");
+let sec = document.getElementById("sec");
+let min = document.getElementById("min");
 
-let timer;
-let seconds = 0;
-let minutes = 0;
-let mseconds = 0;
 
-function stopwatch(){
- mseconds++;
+let startBtn = document.getElementById('start');
+let stopBtn = document.getElementById('stop');
+let resetBtn = document.getElementById('clear');
 
- if (mseconds === 100){
-    mseconds = 0;
-    seconds++;
 
-    if (seconds === 60){
-        seconds = 0;
-        minutes++; 
+let msecCount = 0;
+let secCount = 0;
+let minCount = 0;
+let timerID = null;
+
+
+
+function startTimer() {
+    msecCount++;
+    if (msecCount == 100) {
+        msecCount = 0;
+        secCount++;
+        if(secCount == 60) {
+            secCount = 0;
+            minCount++;
+        }
     }
+ 
+    if (msecCount < 10) {
+        msec.textContent = '0' + msecCount;
+    } else {
+        msec.textContent = msecCount;
+    }
+    if (secCount <10) {
+        sec.textContent = '0' + secCount;
+    }   else {
+        sec.textContent = secCount;
+    }
+    if (minCount < 10){
+        min.textContent = '0' + minCount;
+    } else{min.textContent = minCount;
+    }
+
 }
-//add leading zeros to the display
-    let displaySeconds = String(seconds).padStart(2, '0');
-    let displayMinutes = String(minutes).padStart(2, '0');
-    let displayMSeconds  = String(mseconds).padStart(2, '0');   
+
+ startBtn.addEventListener('click', function() {
+    if (timerID !== null) {
+        clearInterval(timerID);
+    }
+    timerID = setInterval(startTimer, 10);
+});
+stopBtn.addEventListener('click', function() {
+    clearInterval(timerID);
+});
+
+resetBtn.addEventListener('click', function() {
+    clearInterval(timerID);
+    msecCount = 0;
+    secCount = 0;
+    minCount = 0;
     
-    msec.innerText = displayMSeconds;
-    min.innerText = displayMinutes;
-    sec.innerText = displaySeconds;
-}
-
-startCount.addEventListener('click', function(){
-    if(timer) {
-        timer=null;
-    timer = setInterval(stopwatch, 10);
-}});
-stopCount.addEventListener('click', function(){
-    clearInterval(timer);
-    timer = null;
+    // Reset the display
+    msec.textContent = '00';
+    sec.textContent = '00';
+    min.textContent = '00';
 });
-
-clearCount.addEventListener('click', function(){
-    clearInterval(timer);
-    timer = null;
-    mseconds = 0;
-    seconds = 0;
-    minutes = 0;
-    msec.innerText = '00';
-    min.innerText = '00';
-    sec.innerText = '00';
-});
-
-

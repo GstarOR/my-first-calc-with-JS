@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  </head>
+  <body>
+    <div id="card">
+        <div class="top">
+            <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false" />
+                <span class="material-symbols-outlined" id="search">search</span>
+            </div>
+            <div class="weather-icon">
+                <img src="" alt="weather icon" />
+            </div>
+        </div>
+        <div class="middle">
+            <div class="temperature">
+                <span class="temp-value">25°C</span>
+                <div class="location">New York, US</div>
+            </div>
+        </div>
+        <div  class="bottom_info">
+            <div class="humidity">
+                <span class="material-symbols-outlined">mist</span>
+                <div class="hum">
+                    <h2>60%</h2>
+                    <p style="font-size: small;">Humidity</p>
+                </div>
+            </div>
+            <div class="wind-speed">
+                <span class="material-symbols-outlined">air</span>
+                <div>
+                    <h2>15 km/h</h2>
+                    <p style="font-size: small;">wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

@@ -11,11 +11,14 @@
     <div id="card">
         <div class="top">
             <div class="search">
-                <input type="text" placeholder="enter city name" spellcheck="false" />
+                <input id="edafe" type="text" placeholder="enter city name" spellcheck="false" />
                 <span class="material-symbols-outlined" id="search">search</span>
             </div>
+            <div class="error">
+                <p id="eror">Invalid city name</p>
+            </div>
             <div class="weather-icon">
-                <img src="" alt="weather icon" />
+                <img id="weather" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" />
             </div>
         </div>
         <div class="middle">
@@ -23,20 +26,20 @@
                 <span class="temp-value">25°C</span>
                 <div class="location">New York</div>
             </div>
-        </div>
-        <div  class="bottom_info">
-            <div class="humidity">
-                <span class="material-symbols-outlined">mist</span>
-                <div class="hum">
-                    <h2 class="humi">60%</h2>
-                    <p style="font-size: small;">Humidity</p>
+            <div  class="bottom_info">
+                <div class="humidity">
+                    <span class="material-symbols-outlined">mist</span>
+                    <div class="hum">
+                        <h2 class="humi">60%</h2>
+                        <p style="font-size: small;">Humidity</p>
+                    </div>
                 </div>
-            </div>
-            <div class="wind-speed">
-                <span class="material-symbols-outlined">air</span>
-                <div>
-                    <h2 class="wind">15 km/h</h2>
-                    <p style="font-size: small;">wind speed</p>
+                <div class="wind-speed">
+                    <span class="material-symbols-outlined">air</span>
+                    <div>
+                        <h2 class="wind">15 km/h</h2>
+                        <p style="font-size: small;">wind speed</p>
+                    </div>
                 </div>
             </div>
         </div>

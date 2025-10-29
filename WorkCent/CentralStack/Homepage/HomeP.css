@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100vw;
+
+}
+.sel__tabs{
+    padding: 0.7rem;
+    background-color: white;
+    display: flex;
+    width: 90vw;
+    box-shadow: 0 0 0.8rem 0.2rem rgba(228, 228, 228, 0.7);
+    margin: 1.4rem;
+    border-radius: 2rem;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.tabs{
+    color: black;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically center all child items */
+    color: black;
+    font-size: 0.7rem;
+    gap: 0.4rem; /* Add some space between menu items */
+}
+.tabs span:hover{
+    color: blue;
+}
+.tabs span .material-symbols-outlined {
+    vertical-align: middle;
+}
+.startP{
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: min(0.4rem, 0.1%) min(0.8rem, 1%);
+    border-radius: 0.5rem;
+    font-weight: bold;
+
+
+}
+
+.mainS{
+ height: 360px;
+ width: 100%;
+ background-color: rgba(228, 228, 228, 0.1);
+ margin-top: 10px;
+
+}
+.proj{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+
+}
+.startV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: white;
+    border: 3px solid blue;
+    border-radius: 10px
+}
+h2{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: xx-large;
+}
+p{
+    padding-bottom: 20px;
+    box-sizing: content-box;
+    font-size: larger;
+}
+.mainS img{
+    float: right;
+    padding: 15px;
+ }
+ .mainT{
+    width: 100%;
+    background-color: white;
+
+ }
+.mainT span{
+    color: blue;
+    text-transform: capitalize;
+}
+.mainT img{
+    float: left;
+}
+

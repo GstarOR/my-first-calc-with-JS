@@ -14,13 +14,15 @@ body{
 }
 #card{
     background: linear-gradient(135deg, #5ccccc, rgba(11, 17, 20, 0.1));
-    width: 40vh;
-    height: 60vh;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    
 }
 .top{
     display: flex;
@@ -34,7 +36,6 @@ body{
     line-height: 7rem;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     gap: 7%;
     outline: none;
 }
@@ -56,13 +57,22 @@ input{
     outline: none;
     cursor: pointer;
 }
+#eror{
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
 .weather-icon{
     width: 100px;
     height: 100px;
     margin: 0 auto;
     align-content: center;
+    display: none;
 }
-
+.middle{
+    display: none;
+}
 .temperature{
     text-align: center;
     font-size: 300%;
@@ -77,10 +87,11 @@ input{
 .bottom_info{
     display: flex;
     flex-direction: row;
+    gap: 20px;
     justify-content: space-between;
-    position: absolute;
-    bottom: 10%;
+    margin-top: 30px;
     width: 100%;
+    
 }
 .humidity{
     display: flex;

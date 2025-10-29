@@ -158,6 +158,13 @@ p{
 .startV1 #st{
     font-size: 0.5rem;
 }
+.mainO{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
 .Osmall1{
     display: flex;
     width: 100%;
@@ -190,6 +197,42 @@ p{
     border-radius: 50%;
     background-color: rgb(212, 211, 211);
     color: white;
+}
+.Osmall2{
+    display: flex;
+    background-color: blue;
+    color: blue;
+}
+.card1{
+    display: flex;
+    width: 14rem;
+    height: fit-content;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+.card1 h2{
+    font-size: 1.8rem;
+
+}
+.card1 p{
+    font-size: 1rem;
+}
+.card1 button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.5rem whitesmoke;
+    border: none;
+    background-color: white;
 }
 
 
@@ -266,6 +309,9 @@ p{
     .logo{
         font-size: 0.5rem;
     }
+    .mainS h2{
+        font-size: 1rem;
+    }
     h2{
         font-size: 1rem;
     }
@@ -330,5 +376,14 @@ p{
     }
     .st #st{
         font-size: 0.2rem;
+    }
+    .sta{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .a2 span{
+        font-size: 0.5rem;
     }
 }
